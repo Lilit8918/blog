@@ -3,10 +3,10 @@ import { createElement, render } from "./utils.js";
 import { bloggers, posts } from "./data.js";
 
 const createHomeLayout = () => {
-  // Ստանում ենք նոր գրառումները `localStorage`-ից
+  
   const newPosts = Storage.get("newPosts") || [];
 
-  // Ստեղծում ենք ամբողջական կոնտեյներ
+ 
   const container = createElement("div", { class: "container-root" }, [
     // Գլխամաս (header)
     createElement("header", { class: "header" }, [
