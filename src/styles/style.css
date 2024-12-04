@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container-root {
+  display: grid; 
+  grid-template-rows: 65px 1fr 70px; 
+  height: 100vh; 
+}
+
+.header {
+  display: flex; 
+  justify-content: flex-end; 
+  background-color: #5e3c43;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header a{
+  color: #ccc;
+  text-align: center;
+  padding: .5rem;
+  text-decoration: none;
+transition: color 0.3s, background-color 0.3s; 
+border-radius: 5px; 
+}
+
+
+.header a:hover {
+background-color: rgba(255, 255, 255, 0.2); 
+color: #ffdd00; 
+}
+
+
+.header a.active {
+font-weight: bold; 
+color: #ffdd00; 
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(63, 27, 27, 0.1);
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #3a1d1d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-section {
+  display: grid; 
+  grid-template-columns: 200px 1fr; 
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.box {
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-height: 300px;
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 16px;
+  background-color: #3a1d1d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #331f1f; 
+  color: #fff; 
+  text-align: center; 
+  padding: 1rem; 
+  position: fixed; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
